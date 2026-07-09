@@ -25,6 +25,7 @@ echo 'PermitRootLogin no' >> "$conf_file"
 #echo 'UsePAM no' >> "$conf_file" # PAM support is not installed by default
 echo 'HostbasedAuthentication no' >> "$conf_file"
 echo 'PasswordAuthentication no' >> "$conf_file"
+echo 'KbdInteractiveAuthentication no' >> "$conf_file"
 #echo 'KerberosAuthentication no' >> "$conf_file" # Kerberos support is not installed by default
 #echo 'GSSAPIAuthentication no' >> "$conf_file" # GSSAPI support is not installed by default
 echo 'PubkeyAuthentication yes' >> "$conf_file"
