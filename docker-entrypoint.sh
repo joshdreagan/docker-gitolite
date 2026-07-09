@@ -22,11 +22,11 @@ done
 conf_file='/etc/ssh/sshd_config.d/20-authentication-overrides.conf'
 echo '# Authentication overrides' > "$conf_file"
 echo 'PermitRootLogin no' >> "$conf_file"
-echo 'UsePAM no' >> "$conf_file"
+#echo 'UsePAM no' >> "$conf_file" # PAM support is not installed by default
 echo 'HostbasedAuthentication no' >> "$conf_file"
 echo 'PasswordAuthentication no' >> "$conf_file"
-echo 'KerberosAuthentication no' >> "$conf_file"
-echo 'GSSAPIAuthentication no' >> "$conf_file"
+#echo 'KerberosAuthentication no' >> "$conf_file" # Kerberos support is not installed by default
+#echo 'GSSAPIAuthentication no' >> "$conf_file" # GSSAPI support is not installed by default
 echo 'PubkeyAuthentication yes' >> "$conf_file"
 
 # Disable unwanted subsystems
